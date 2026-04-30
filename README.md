@@ -60,20 +60,23 @@ pip install torch torchvision pydicom pandas numpy streamlit pillow
 2. Pre-Processing the DICOMs (V2.0 Pipeline)
 To prevent I/O bottlenecks during training, run the offline preprocessor to convert your raw DICOM files.
 
-Bash
+```Bash
 python preprocess.py
+```
 3. Training the Model
 Launch the training engine. This script utilizes Pandas to merge the clinical CSV answer keys, drops missing views, and initializes the MPS dataloader.
 
-Bash
+```Bash
 python main.py
+```
 🖥️ Interactive Clinical Dashboard
 The project includes a production-ready Streamlit Frontend that allows users to test the model.
 
 To launch the dashboard:
 
-Bash
+```Bash
 streamlit run app.py
+```
 The dashboard will automatically open in your browser at http://localhost:8501.
 
 ⚙️ Project Structure
