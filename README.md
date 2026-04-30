@@ -56,8 +56,9 @@ This repository tracks the evolution of the project from a Kaggle-based proof-of
 Ensure you have Python 3.10+ installed. Install the required dependencies:
 ```bash
 pip install torch torchvision pydicom pandas numpy streamlit pillow
+```
 2. Pre-Processing the DICOMs (V2.0 Pipeline)
-To prevent I/O bottlenecks during training, run the offline preprocessor to convert your raw DICOM files into PyTorch .pt tensors. (Note: Adjust paths in the script to point to your external SSD/Storage).
+To prevent I/O bottlenecks during training, run the offline preprocessor to convert your raw DICOM files.
 
 Bash
 python preprocess.py
@@ -67,7 +68,7 @@ Launch the training engine. This script utilizes Pandas to merge the clinical CS
 Bash
 python main.py
 🖥️ Interactive Clinical Dashboard
-The project includes a production-ready Streamlit Frontend that allows users to test the model using .dcm, .pt, or standard .png/.jpg files. The UI handles all complex photometric inversions and patch-extraction natively.
+The project includes a production-ready Streamlit Frontend that allows users to test the model.
 
 To launch the dashboard:
 
