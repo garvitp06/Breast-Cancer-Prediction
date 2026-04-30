@@ -80,7 +80,7 @@ streamlit run app.py
 The dashboard will automatically open in your browser at http://localhost:8501.
 
 ⚙️ Project Structure
-Plaintext
+```
 ├── preprocess.py       # V2.0 Offline DICOM-to-Tensor Engine
 ├── dataset.py          # Custom PyTorch Dataset & Patch Extraction
 ├── model.py            # ResNet-18 + Cross-View Transformer Architecture
@@ -89,5 +89,6 @@ Plaintext
 ├── mass_case.csv       # Clinical Labels (Masses)
 ├── calc_case.csv       # Clinical Labels (Calcifications)
 └── best_model.pth      # Saved Model Weights (Generated post-training)
+```
 🤝 Author
 Built as a demonstration of applying MLOps, hardware-aware data engineering, and spatial Deep Learning to the medical domain.
