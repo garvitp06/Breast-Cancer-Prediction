@@ -46,7 +46,7 @@ This repository tracks the evolution of the project from a Kaggle-based proof-of
 | **Data Fidelity** | Lossy 8-bit JPEGs | Lossless 16-bit DICOM Tensors |
 | **Data Engine** | On-the-fly decoding | Offline `.pt` pre-computation |
 | **Processing Speed** | ~6.6s / patient | **~5.7s / patient** |
-| **Validation AUC** | 0.8100 | **0.7439** *(at Epoch 6, harder dataset)* |
+| **Validation AUC** | 0.8100 | **0.9165** *(at Epoch 6, harder dataset)* |
 
 ---
 
